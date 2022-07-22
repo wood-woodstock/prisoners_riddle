@@ -1,0 +1,8 @@
+*.exe
+*.log
+.vscode/
+__pycache__/
+build/
+dist/
+prisoners_riddle.rar
+prisoners_riddle.spec
