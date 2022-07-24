@@ -87,6 +87,7 @@ class Line(Rect):
             x=x+self.x_spc+p.w
             r=0
          r=r+1
+      self.LoadBgTileImg("imgs//tile_brick.png",self.w,self.h)
 
    def RemPrisoner(self,p):
       self.prisoners.remove(p)
@@ -113,7 +114,7 @@ class Line(Rect):
       self.SetPos(x,self.y)
 
    def Render(self):
-      self.FillBgColor()
+      # self.FillBgColor()
       self.FillFgColor()
       for p in self.prisoners:
          p.Render()
