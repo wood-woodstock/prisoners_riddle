@@ -103,11 +103,7 @@ class Rect():
       th=temp.get_height()
       for y in range(0,h,th):
          for x in range(0,w,tw):
-            print(x,y)
             self.bg_surf.blit(temp,(x,y))
-
-      # (w,h)=self.bg_surf.get_size()
-      # self.MaxSize(w,h)
 
    def LoadFgTileImg(self,path,w,h):
       self.SetSize(w,h)
@@ -117,5 +113,4 @@ class Rect():
       th=temp.get_height()
       for y in range(0,h,th):
          for x in range(0,w,tw):
-            print(x,y)
             self.fg_surf.blit(temp,(x,y))
