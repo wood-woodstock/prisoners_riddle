@@ -18,4 +18,9 @@
 
 [Wikipedia article](https://en.wikipedia.org/wiki/100_prisoners_problem)
 
-The art images was take from [OpenGameArt](https://opengameart.org) website. The prisoner is from [this link](https://opengameart.org/content/prison-jumpsuit), the box is from [this link](https://opengameart.org/content/isometric-box) and the GUI buttons is from [this link](https://opengameart.org/content/game-icons).
+The art images was take from [OpenGameArt](https://opengameart.org) website.
+ - [prisoner](https://opengameart.org/content/prison-jumpsuit);
+ - [box](https://opengameart.org/content/isometric-box);
+ - [GUI buttons](https://opengameart.org/content/game-icons);
+ - [floor](https://opengameart.org/content/wood-floor);
+ - [bricks](https://opengameart.org/content/32-x-32-bricks).
