@@ -97,6 +97,7 @@ class Room(Rect):
    def DistributeBoxes(self):
       x_max=(self.cols*(self.boxes[0].w+self.x_spc))+self.x_spc
       y_max=(self.rows*(self.boxes[0].h+self.y_spc))+self.y_spc+self.prisoner.h
+      self.LoadBgTileImg("imgs//tile_floor.png",x_max,y_max)
 
       c=1 # Column
       r=0 # Row
@@ -114,7 +115,7 @@ class Room(Rect):
 
       self.SetSize(x_max,y_max)
       self.fg_surf=pg.Surface(self.size,pg.SRCALPHA)
-      self.bg_surf=pg.Surface(self.size,pg.SRCALPHA)
+      # self.bg_surf=pg.Surface(self.size,pg.SRCALPHA)
 
    def SetSpace(self,spc):
       self.x_spc=spc
@@ -151,7 +152,7 @@ class Room(Rect):
          # self.SetTotal(self.total-1)
 
    def Render(self):
-      self.FillBgColor()
+      # self.FillBgColor()
       self.FillFgColor()
       if(self.prisoner):
          x=(self.w-self.prisoner.w)//2
