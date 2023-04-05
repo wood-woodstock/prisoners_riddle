@@ -113,14 +113,13 @@ class Game(Rect):
             if(event.button==1):
                p=self.in_line.Click(event.pos)
                act=self.menu.GetClick(event.pos)
-               if(act>=0):
-                  match(act):
-                     case 0:
-                        self.Reset()
-                     case 1:
-                        self.Increment()
-                     case 2:
-                        self.Decrement()
+               if act >= 0:                  
+                  if act == 0:
+                     self.Reset()
+                  elif act == 1:
+                     self.Increment()
+                  elif act == 2:
+                     self.Decrement()
 
                if(p):
                   if(not self.room.occupied):
